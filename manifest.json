@@ -1,0 +1,40 @@
+{
+  "background_color": "#090808",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "EC Digital",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "EC Systems",
+  "start_url": "/index.html",
+  "theme_color": "#1b5865",
+  "form_factor": "wide",
+  "icons": [
+    {
+      "src": "/assets/images/app-icon.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/images/app-icon.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    }
+  ],
+  "lang": "en",
+  "categories": [
+    "developer",
+    "developer tools",
+    "social"
+  ],
+  "shortcuts": [
+    {
+      "name": "Gym Guardian",
+      "url": "auto-yt.site",
+      "description": "Gym Guardian is a comprehensive gym management platform designed to streamline operations, enhance member experience, and provide actionable insights for fitness businesses."
+    }
+  ],
+  "description": "Custom tech Solutions Suite"
+}

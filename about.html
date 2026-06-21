@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>About & Contact — EC Digital Systems</title>
+<meta name="description" content="EC Digital Systems LLC is a software studio focused on custom business systems, managed hosting, and security. Get in touch to start a project." />
+<meta name="theme-color" content="#0a0c10" />
+<meta property="og:title" content="About & Contact — EC Digital Systems" />
+<meta property="og:description" content="Get in touch with EC Digital Systems LLC." />
+<link rel="icon" type="image/png" href="/assets/images/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" />
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css" />
+<link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav" aria-label="Primary">
+    <a href="/" class="brand-link"><img src="/assets/images/logo.png" alt="EC Digital Systems logo" width="32" height="32" /><span>EC DIGITAL SYSTEMS</span></a>
+    <div class="nav-links">
+      <a href="/" data-nav="home">Home</a>
+      <a href="/services.html" data-nav="services">Services</a>
+      <a href="/products/index.html" data-nav="products">Products</a>
+      <a href="/about.html" data-nav="about">About</a>
+      <a href="/about.html#contact">Get Started</a>
+    </div>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><i class="ph-bold ph-list"></i></button>
+  </nav>
+  <div class="mobile-menu">
+    <a href="/">Home</a>
+    <a href="/services.html">Services</a>
+    <a href="/products/index.html">Products</a>
+    <a href="/about.html">About</a>
+    <a href="/about.html#contact">Get Started</a>
+  </div>
+</header>
+
+<canvas id="about-canvas" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1; object-fit: cover; opacity: 0.45; pointer-events: none;"></canvas>
+
+<main>
+  <section class="page-header">
+    <div class="container">
+      <span class="eyebrow">About</span>
+      <h1>A small studio building reliable software for serious businesses.</h1>
+      <p>We're EC Digital Systems LLC — a team obsessed with the boring details that make software actually work: clear data models, reliable hosting, and a security team that doesn't sleep.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Principles</span>
+          <h2 style="margin-top: 14px;">How we work.</h2>
+        </div>
+      </div>
+      <div class="values reveal">
+        <div class="value"><i class="ph ph-target"></i><h4>Fit, not features</h4><p>We design around your real workflow. No bloated platforms, no features you'll never use.</p></div>
+        <div class="value"><i class="ph ph-shield-check"></i><h4>Security by default</h4><p>Backups, patching, monitoring, and access control are part of every project — not an upsell.</p></div>
+        <div class="value"><i class="ph ph-handshake"></i><h4>Long-term partner</h4><p>We host and maintain what we ship, so the software you depend on stays healthy for years.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Contact</span>
+          <h2 style="margin-top: 14px;">Tell us about your project.</h2>
+        </div>
+        <p class="lead">We respond within one business day with a clear next step — no sales pressure.</p>
+      </div>
+
+      <div class="contact-grid reveal">
+        <div class="contact-info">
+          <p>Whether you need a brand-new system, an upgrade to an existing app, or a team to take over hosting and security, we'd love to hear from you.</p>
+          <ul>
+            <li><i class="ph ph-envelope-simple"></i><a href="mailto:ecdigitalsystemsllc@gmail.com">ecdigitalsystemsllc@gmail.com</a></li>
+            <li><i class="ph ph-clock"></i><span class="muted">Mon – Fri, 9am – 6pm</span></li>
+            <li><i class="ph ph-globe"></i><span class="muted">Working globally, remotely</span></li>
+          </ul>
+        </div>
+
+        <form id="contact-form" class="form" novalidate>
+          <label>Name <input type="text" name="name" autocomplete="name" required /></label>
+          <label>Email <input type="email" name="email" autocomplete="email" required /></label>
+          <label>How can we help? <textarea name="message" required placeholder="Tell us what you're building or what's broken…"></textarea></label>
+          <button type="submit" class="btn btn-primary btn-square" style="justify-content: center;">Send message <i class="ph-bold ph-arrow-right"></i></button>
+          <div id="contact-msg" class="form-msg" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="about"><a href="/" class="brand-link"><img src="/assets/images/logo.png" alt="" width="32" height="32" /><span>EC DIGITAL SYSTEMS</span></a><p>EC Digital Systems LLC — custom software, managed hosting, and a dedicated security team for ambitious businesses.</p></div>
+      <div><h5>Navigate</h5><ul><li><a href="/">Home</a></li><li><a href="/services.html">Services</a></li><li><a href="/products/index.html">Products</a></li><li><a href="/about.html">About</a></li><li><a href="/about.html#contact">Contact</a></li></ul></div>
+      <div><h5>Reach out</h5><ul><li><a href="mailto:">ecdigitalsystemsllc@gmail.com</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> EC Digital Systems LLC</span><span>Engineered with precision.</span></div>
+  </div>
+</footer>
+<script src="/js/script.js" defer></script>
+<script src="/js/about.js" defer></script>
+</body>
+</html>
+
+

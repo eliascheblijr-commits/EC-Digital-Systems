@@ -1,0 +1,33 @@
+{
+  "products": [
+    {
+      "id": "gym-guardian",
+      "name": "Gym Guardian",
+      "slug": "gym-guardian",
+      "icon": "activity",
+      "shortDescription": "A complete gym management platform for member experience, billing, scheduling, and reporting.",
+      "fullDescription": "Complete gym management platform featuring member portals, billing automation, class scheduling, performance tracking, and comprehensive reporting—all designed for modern fitness operations.",
+      "status": "complete",
+      "type": "Business Management Software",
+      "featured": true
+    },
+    {
+      "id": "studio-ops",
+      "name": "Studio Ops",
+      "icon": "sparkle",
+      "shortDescription": "A unified operations hub for studio scheduling, memberships, and staff workflows.",
+      "fullDescription": "A studio-first platform that keeps class scheduling, member communication, and daily operations in one place.",
+      "status": "upcoming",
+      "type": "Platform"
+    },
+    {
+      "id": "billing-pulse",
+      "name": "Billing Pulse",
+      "icon": "currency-dollar",
+      "shortDescription": "Intelligent billing and revenue insights for fitness businesses.",
+      "fullDescription": "Automated billing workflows, revenue tracking, and subscription health monitoring built for growing gyms and studios.",
+      "status": "planning",
+      "type": "Finance"
+    }
+  ]
+}

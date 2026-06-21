@@ -1,0 +1,95 @@
+{
+  "id": "gym-guardian",
+  "name": "Gym Guardian",
+  "tagline": "Gym Guardian BMS with structured operational licensing and agreement-backed delivery.",
+  "shortDescription": "A licensed gym management system with subscription pricing, compliance rules, and secure operations.",
+  "fullDescription": "Gym Guardian is delivered under a formal agreement that defines deployment, licensing, maintenance, and operational support for gym businesses.",
+  "status": "available",
+  "launch_date": "2025-Q3",
+  "features": [
+    {
+      "title": "Production UI/UX",
+      "description": "Mobile-first responsive interface with polished operational workflows."
+    },
+    {
+      "title": "Omnichannel POS",
+      "description": "Cashier terminal support for cash, manual USSD, and walk-in transaction logging."
+    },
+    {
+      "title": "Digital Relational Ledger",
+      "description": "Automated member IDs and ledger tracking replacing paper-based records."
+    },
+    {
+      "title": "Absolute Gate Tracking",
+      "description": "Real-time check-in logging with validation for member access and capacity control."
+    },
+    {
+      "title": "RRA Compliance Ledger",
+      "description": "Revenue, expenditure, VAT, and CIT reporting outputs for local accounting workflows."
+    },
+    {
+      "title": "Business Intelligence",
+      "description": "Live dashboards for retention, revenue, and member activity across branches."
+    }
+  ],
+  "pricing_tiers": [
+    {
+      "name": "Operational Subscription",
+      "monthly_usd": 100,
+      "capacity": "Full system capabilities within the standard resource cap",
+      "features": [
+        "Standard software deployment",
+        "Monthly operational licensing",
+        "Support and maintenance"
+      ]
+    },
+    {
+      "name": "Branch Expansion",
+      "monthly_usd": 100,
+      "capacity": "Each additional branch",
+      "features": [
+        "Multi-branch support",
+        "Centralized reporting",
+        "Synchronized branch operations"
+      ]
+    },
+    {
+      "name": "Enterprise",
+      "monthly_usd": null,
+      "capacity": "Custom",
+      "features": [
+        "Custom architecture",
+        "API integration",
+        "Dedicated support",
+        "Advanced compliance"
+      ]
+    }
+  ],
+  "use_cases": [
+    {
+      "title": "Independent Gym",
+      "description": "Single location fitness centers managing daily operations and member relationships efficiently."
+    },
+    {
+      "title": "Franchise Network",
+      "description": "Multi-location gyms with centralized billing, reporting, and member management across all sites."
+    },
+    {
+      "title": "Specialty Studios",
+      "description": "Yoga, Pilates, CrossFit, or boutique fitness studios with class-focused scheduling and member engagement."
+    }
+  ],
+  "tech_stack": {
+    "platform": "Web-based SaaS + Mobile",
+    "database": "PostgreSQL",
+    "security": "Enterprise-grade encryption, SOC 2 Type II compliant",
+    "uptime": "99.9% SLA"
+  },
+  "cta_primary": "Schedule a Demo",
+  "cta_secondary": "View Pricing",
+  "support": {
+    "email": "support@gym-guardian.com",
+    "hours": "Monday–Friday, 9 AM–6 PM EST",
+    "response_time": "Under 2 hours"
+  }
+}

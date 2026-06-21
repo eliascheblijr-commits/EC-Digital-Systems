@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Services — EC Digital Systems</title>
+<meta name="description" content="Custom business software, websites, Android & PWA apps, and managed hosting with a dedicated security team — full lifecycle support from EC Digital Systems." />
+<meta name="theme-color" content="#0a0c10" />
+<meta property="og:title" content="Services — EC Digital Systems" />
+<meta property="og:description" content="Custom software, web, mobile apps, and managed hosting & security." />
+<link rel="icon" type="image/png" href="/assets/images/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" />
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css" />
+<link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav" aria-label="Primary">
+    <a href="/" class="brand-link"><img src="/assets/images/logo.png" alt="EC Digital Systems logo" width="32" height="32" /><span>EC DIGITAL SYSTEMS</span></a>
+    <div class="nav-links">
+      <a href="/" data-nav="home">Home</a>
+      <a href="/services.html" data-nav="services">Services</a>
+      <a href="/products/index.html" data-nav="products">Products</a>
+      <a href="/about.html" data-nav="about">About</a>
+      <a href="/about.html#contact">Get Started</a>
+    </div>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><i class="ph-bold ph-list"></i></button>
+  </nav>
+  <div class="mobile-menu">
+    <a href="/">Home</a>
+    <a href="/services.html">Services</a>
+    <a href="/products/index.html">Products</a>
+    <a href="/about.html">About</a>
+    <a href="/about.html#contact">Get Started</a>
+  </div>
+</header>
+
+<canvas id="service-canvas" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1; object-fit: cover; opacity: 0.45; pointer-events: none;"></canvas>
+
+<main>
+  <section class="page-header">
+    <div class="container">
+      <span class="eyebrow">Capabilities</span>
+      <h1>Services that cover the full lifecycle of your software.</h1>
+      <p>We design, build, host, and protect software that businesses depend on every day — without handing you off to three different vendors.</p>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="service-block reveal">
+      <div><div class="num">01</div><i class="ph ph-cube" style="color:var(--brand); font-size:36px; margin-top:16px;"></i></div>
+      <div>
+        <h3>Custom Business Management Software</h3>
+        <p>Tailored systems that replace spreadsheets, legacy tools, and patched-together workflows. We model your operations and ship software that fits them precisely.</p>
+        <ul>
+          <li><i class="ph ph-check-circle"></i> Operations, billing, scheduling, inventory</li>
+          <li><i class="ph ph-check-circle"></i> Role-based access &amp; audit trails</li>
+          <li><i class="ph ph-check-circle"></i> Reporting and analytics dashboards</li>
+          <li><i class="ph ph-check-circle"></i> Integrations with payment, email, and SMS providers</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="service-block reveal">
+      <div><div class="num">02</div><i class="ph ph-browser" style="color:var(--brand); font-size:36px; margin-top:16px;"></i></div>
+      <div>
+        <h3>Websites &amp; Web App Upgrades</h3>
+        <p>Marketing sites, portals, and web applications — or a full rescue of an aging codebase. Fast, accessible, and SEO-friendly out of the box.</p>
+        <ul>
+          <li><i class="ph ph-check-circle"></i> Marketing &amp; product websites</li>
+          <li><i class="ph ph-check-circle"></i> Custom web applications &amp; admin panels</li>
+          <li><i class="ph ph-check-circle"></i> Performance, accessibility, and SEO audits</li>
+          <li><i class="ph ph-check-circle"></i> Migrations and modernization of legacy stacks</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="service-block reveal">
+      <div><div class="num">03</div><i class="ph ph-device-mobile" style="color:var(--brand); font-size:36px; margin-top:16px;"></i></div>
+      <div>
+        <h3>Android &amp; PWA Applications</h3>
+        <p>Installable mobile experiences your customers actually use — whether native Android or progressive web apps that work offline across every device.</p>
+        <ul>
+          <li><i class="ph ph-check-circle"></i> Native Android apps (Kotlin)</li>
+          <li><i class="ph ph-check-circle"></i> Progressive web apps with offline support</li>
+          <li><i class="ph ph-check-circle"></i> Push notifications &amp; deep linking</li>
+          <li><i class="ph ph-check-circle"></i> Play Store submission &amp; release management</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="service-block reveal">
+      <div><div class="num">04</div><i class="ph ph-shield-check" style="color:var(--brand); font-size:36px; margin-top:16px;"></i></div>
+      <div>
+        <h3>Managed Hosting &amp; Security</h3>
+        <p>We run your software on our own servers, with a dedicated security team handling backups, patches, monitoring, and incident response — so your team can focus on the business.</p>
+        <ul>
+          <li><i class="ph ph-check-circle"></i> Hosting on our managed infrastructure</li>
+          <li><i class="ph ph-check-circle"></i> 24/7 monitoring &amp; automated backups</li>
+          <li><i class="ph ph-check-circle"></i> Security patches &amp; vulnerability response</li>
+          <li><i class="ph ph-check-circle"></i> SSL, DDoS protection, and access hardening</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-alt cta-strip">
+    <div class="container">
+      <h2>Have a project in mind?</h2>
+      <p>Tell us what you're working on. We'll come back with a clear, honest plan.</p>
+      <a href="/about.html#contact" class="btn btn-primary btn-square">Get in touch</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="about"><a href="/" class="brand-link"><img src="/assets/images/logo.png" alt="" width="32" height="32" /><span>EC DIGITAL SYSTEMS</span></a><p>EC Digital Systems LLC — custom software, managed hosting, and a dedicated security team for ambitious businesses.</p></div>
+      <div><h5>Navigate</h5><ul><li><a href="/services.html">Services</a></li><li><a href="/products/index.html">Products</a></li><li><a href="/about.html">About</a></li><li><a href="/about.html#contact">Contact</a></li></ul></div>
+      <div><h5>Reach out</h5><ul><li><a href="mailto:ecdigitalsystemsllc@gmail.com">ecdigitalsystemsllc@gmail.com</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> EC Digital Systems LLC</span><span>Engineered with precision.</span></div>
+  </div>
+</footer>
+<script src="/js/script.js" defer></script>
+<script src="/js/service.js" defer></script>
+</body>
+</html>
+
+

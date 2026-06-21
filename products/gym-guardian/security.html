@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Gym Guardian Security — EC Digital Systems</title>
+<meta name="description" content="Security, authentication, and architecture details for Gym Guardian from Schedule B." />
+<meta name="theme-color" content="#0a0c10" />
+<meta property="og:title" content="Gym Guardian Security — EC Digital Systems" />
+<meta property="og:description" content="Explore the technical security and architecture specifications for Gym Guardian from Schedule B." />
+<link rel="icon" type="image/png" href="/assets/images/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" />
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container" style="padding: 1.5rem 0; display: flex; justify-content: space-between; align-items: center;">
+    <a href="/products/gym-guardian/index.html" class="btn btn-ghost">Back to Gym Guardian</a>
+    <div style="font-size: 0.95rem; color: #9ca5b3;">Security</div>
+  </div>
+</header>
+
+<main>
+  <section class="page-header">
+    <div class="container">
+      <span class="eyebrow">Security</span>
+      <h1>Gym Guardian Architecture</h1>
+      <p>Technical protections and system hardening from Schedule B of the Gym Guardian agreement.</p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Data integrity</span>
+          <h2 style="margin-top: 14px;">Blockchain-style transaction protection.</h2>
+        </div>
+              <p class="lead reveal">Gym Guardian relies on cryptographic verification to ensure ledger integrity and to guard against out-of-band database tampering.</p>
+      </div>
+
+      <div class="cards cols-2 reveal">
+        <div class="card">
+          <h4>HMAC-SHA256 ledger chain</h4>
+          <p>Each transaction row is linked by an HMAC-SHA256 hash sequence. Direct database modification breaks the sequence and locks administrative access.</p>
+        </div>
+        <div class="card">
+          <h4>Idempotency firewall</h4>
+          <p>State-mutating endpoints enforce single-use UUIDv4 tracking keys to block duplicate actions from double-submits or network retries.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Authentication</span>
+          <h2 style="margin-top: 14px;">Session hardening and access control.</h2>
+        </div>
+      </div>
+      <div class="feature-grid reveal">
+        <div><h4>Role-based control</h4><p>Strict permission mapping ties endpoints to specific clearance levels.</p></div>
+        <div><h4>JWT mobility</h4><p>API and mobile clients use secure JWTs instead of browser session cookies.</p></div>
+        <div><h4>Secure cookies</h4><p>Sessions are protected with httponly, secure, and samesite=Lax cookie policies.</p></div>
+        <div><h4>Multi-tenant scoping</h4><p>All operations validate the assigned gym_id to prevent cross-tenant access.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Defenses</span>
+          <h2 style="margin-top: 14px;">Active protections against common web threats.</h2>
+        </div>
+      </div>
+      <div class="cards cols-2 reveal">
+        <div class="card">
+          <h4>SQL Injection protection</h4>
+          <p>All database access is implemented through PDO prepared statements. Variable concatenation in SQL is prohibited.</p>
+        </div>
+        <div class="card">
+          <h4>XSS prevention</h4>
+          <p>Dynamic frontend output is encoded with htmlspecialchars() to block malicious script injection.</p>
+        </div>
+        <div class="card">
+          <h4>CSP headers</h4>
+          <p>Default source restrictions and inline script blocking are enforced by a defensive Content Security Policy.</p>
+        </div>
+        <div class="card">
+          <h4>CSRF mitigation</h4>
+          <p>All state-changing forms and links validate cryptographically secure tokens to stop cross-site request forgery.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Infrastructure</span>
+          <h2 style="margin-top: 14px;">Caching, concurrency, and server hardening.</h2>
+        </div>
+      </div>
+      <div class="cards cols-2 reveal">
+        <div class="card">
+          <h4>Redis caching</h4>
+          <p>High-performance Redis is used for request deduplication and to preserve transactional integrity under load.</p>
+        </div>
+        <div class="card">
+          <h4>Row-level locking</h4>
+          <p>Pessimistic SELECT ... FOR UPDATE locking prevents race conditions in high-volume member check-ins.</p>
+        </div>
+        <div class="card">
+          <h4>Secure headers</h4>
+          <p>Production enforces X-Frame-Options, X-Content-Type-Options, and HSTS to reduce clickjacking and protocol abuse.</p>
+        </div>
+        <div class="card">
+          <h4>Audit visibility</h4>
+          <p>Basic staff visibility and reconciliation modules are designed to capture desk errors and maintain accountability.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Data lifecycle</span>
+          <h2 style="margin-top: 14px;">Soft deletes, retention, and minimization.</h2>
+        </div>
+      </div>
+      <div class="callout reveal">
+        <p>The system enforces soft-delete architecture with a three-day recovery grace period, followed by safe automated cleanup to satisfy regional data protection requirements.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Contact</span>
+          <h2 style="margin-top: 14px;">Talk to our security and implementation team.</h2>
+        </div>
+        <p class="lead">Ask about deployment hardening, compliance, or the full technical architecture behind Gym Guardian.</p>
+      </div>
+      <div class="contact-grid reveal">
+        <form id="contact-form" class="form">
+          <label>Name <input type="text" name="name" required placeholder="Your full name" /></label>
+          <label>Email <input type="email" name="email" required placeholder="you@example.com" /></label>
+          <label>Business name <input type="text" name="company" placeholder="Gym name or organization" /></label>
+          <label>Message <textarea name="message" required placeholder="What security or architecture questions do you have?"></textarea></label>
+          <div id="contact-msg" class="form-msg"></div>
+          <button type="submit" class="btn btn-primary btn-square">Send inquiry</button>
+        </form>
+        <div class="contact-info">
+          <h5>Direct contact</h5>
+          <p>Reach our team to discuss Gym Guardian architecture or contract terms.</p>
+          <ul>
+            <li><i class="ph ph-envelope"></i><a href="mailto:ecdigitalsystemsllc@gmail.com">ecdigitalsystemsllc@gmail.com</a></li>
+            <li><i class="ph ph-phone"></i><a href="tel:+250792875402">+250 792 875 402</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="about"><a href="/" class="brand-link"><img src="/assets/images/logo.png" alt="" width="32" height="32" /><span>EC DIGITAL</span></a><p>EC Digital Systems LLC — custom software, managed hosting, and a dedicated security team for ambitious businesses.</p></div>
+      <div><h5>Navigate</h5><ul><li><a href="/services.html">Services</a></li><li><a href="/products/index.html">Products</a></li><li><a href="/about.html">About</a></li><li><a href="/about.html#contact">Contact</a></li></ul></div>
+      <div><h5>Reach out</h5><ul><li><a href="mailto:ecdigitalsystemsllc@gmail.com">ecdigitalsystemsllc@gmail.com</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> EC Digital Systems LLC</span><span>Engineered with precision.</span></div>
+  </div>
+</footer>
+<script src="/js/script.js" defer></script>
+</body>
+</html>
