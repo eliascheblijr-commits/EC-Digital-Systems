@@ -12,22 +12,26 @@
       "featured": true
     },
     {
-      "id": "studio-ops",
-      "name": "Studio Ops",
-      "icon": "sparkle",
-      "shortDescription": "A unified operations hub for studio scheduling, memberships, and staff workflows.",
-      "fullDescription": "A studio-first platform that keeps class scheduling, member communication, and daily operations in one place.",
-      "status": "upcoming",
-      "type": "Platform"
+      "id": "caffe-bms",
+      "name": "Caffe BMS",
+      "slug": "caffe-bms",
+      "icon": "coffee",
+      "shortDescription": "A comprehensive solution for coffee shop operations.",
+      "fullDescription": "A complete business management system for coffee shops, featuring inventory tracking, sales reporting, and customer relationship management.",
+      "status": "development",
+      "type": "Business Management Software",
+      "openSource": true
     },
     {
-      "id": "billing-pulse",
-      "name": "Billing Pulse",
-      "icon": "currency-dollar",
-      "shortDescription": "Intelligent billing and revenue insights for fitness businesses.",
-      "fullDescription": "Automated billing workflows, revenue tracking, and subscription health monitoring built for growing gyms and studios.",
-      "status": "planning",
-      "type": "Finance"
+      "id": "workout-wizard",
+      "name": "Workout Wizard",
+      "slug": "workout-wizard",
+      "icon": "brain",
+      "shortDescription": "A smart workout planning algorithm for fitness enthusiasts.",
+      "fullDescription": "An algorithmic fitness software that generates personalized workout plans based on user goals, fitness level, and available equipment.",
+      "status": "upcoming",
+      "type": "Algorithmic Fitness Software",
+      "openSource": true
     }
   ]
 }

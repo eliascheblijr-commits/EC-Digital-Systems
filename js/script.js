@@ -180,13 +180,14 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
 });
 
 // ============ PRODUCT STATUS LOADER ============
-const liveStatuses = new Set(['complete', 'available']);
+const liveStatuses = new Set(['complete', 'beta']);
 const statusLabels = {
   complete: 'Live',
-  available: 'Live',
+  development: 'In Development',
   upcoming: 'Upcoming',
   planning: 'Planning',
-  custom: 'Custom'
+  custom: 'Custom',
+  beta: 'Beta Release'
 };
 
 const loadProducts = async () => {
@@ -267,6 +268,7 @@ const createProductCard = (product, index) => {
     <p>${product.shortDescription}</p>
     ${createCardMeta(product)}
     ${product.featured ? '<span class="badge badge-featured">Featured</span>' : ''}
+    ${product.openSource ? '<span class="badge badge-opensource">Open Source</span>' : ''}
   `;
   return card;
 };
